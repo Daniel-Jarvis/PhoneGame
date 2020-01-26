@@ -1,0 +1,41 @@
+Dear group_0625
+
+This semester, we talked about MVP, the Model-View-Presenter architecture. It has many advantages, particularly when working with Android. As you can see from your project, your activity classes have methods that are specific to Android. If you encapsulate the rest of your code sufficiently, it is possible to port it to another platform simply by creating a new UI (for example, a website).
+
+Encapsulation can take on many forms. You can package your View classes together. You can ensure that your dependencies go one-way, towards the inner more abstract layers. You can incorporate SOLID principles as much as possible and design patterns where they make sense.
+Here is feedback that is specific to your project:
+
+***
+You made good use of
++ MVP!
++ Strategy Pattern for activities
++ Builder Pattern in dialog construction
++ Singleton for high scores
++ Dependency Injection to avoid having to create new games each time
++ Dependency inversion for level management
++ A clean menu system
+
+The user sees
++ An entertaining domain, including a 207 quiz and Java topics
++ Good UI design and strong UX experience
++ Background music
++ Ads! Ha!
+
+A good next step would be to
++ Refactor GameManager, which is a bit bloated
++ Class User has a lot of instance variables and could be refactored to introduce some helper classes to manage the data
++ Add Javadoc for all classes (although nice job on the method-level Javadoc)
++ This is minor, but rename Hiscore to HiScore or even HighScore
++ Introduce constants to use instead of magic numbers — why 5 in HiscoreManager?
+
+You also were quite interested in:
+
++ Go beyond the project requirements and incorporate encryption
++ Add more levels, like in WarioWare
++ Online multiplayer!
+
+We hope that you enjoyed working on this project and found it a useful learning experience.
+
+Cheers,
+The CSC207 Instructional Team
+
